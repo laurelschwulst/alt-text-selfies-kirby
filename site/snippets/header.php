@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, user-scalable=no" />
 
   <!-- meta -->
-  <title><?= $site->site_title() ?></title>
+  <title><?= $site->title()->esc() ?> | <?= $page->title()->esc() ?></title>
   <meta name="Title" content="<?= $site->site_title() ?>" />
   <meta name="Author" content="<?= $site->site_author() ?>" />
   <meta name="Description" content="<?= $site->site_description() ?>" />
@@ -30,7 +30,7 @@
         content="<?php if ($site->twitter_img()->isNotEmpty()): ?><?= $site->twitter_img()->toFile()->url() ?><?php endif ?>"
   />
 
-  <?= css(['assets/css/index.css', '@auto']) ?>
+  <?= css(['assets/css/tailwind.css', 'assets/css/styles.css']) ?>
 
 </head>
 

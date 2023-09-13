@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Century Expanded';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/century_expanded_lt_w03_roman-webfont.woff2) format('woff2'), url(../fonts/century_expanded_lt_w03_roman-webfont.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Century Expanded';
+  font-style: italic;
+  font-weight: 400;
+  src: url(../fonts/century_expanded_lt_w03_italic-webfont.woff2) format('woff2'), url(../fonts/century_expanded_lt_w03_italic-webfont.woff) format('woff');
+}
+
+html {
+  font-family: 'Century Expanded';
+  font-size: 24px;
+}
