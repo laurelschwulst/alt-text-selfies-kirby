@@ -1,5 +1,7 @@
 <?php snippet('header') ?>
 
+<div class="w-full min-h-full bg-yellow">
+
   <?= $site->splash_text()->kirbytext() ?>
 
   <?= $site->welcome_text()->kirbytext() ?>
@@ -11,5 +13,7 @@
         <?php endforeach ?>
         <li><a class="essays" href="essays">Essays</a></li>
     </menu>
+
+</div>
 
 <?php snippet('footer') ?>
