@@ -1,1 +1,45 @@
-Title: Site Title
+Title: Alt Text Selfies
+
+----
+
+Welcome-text:
+
+*Welcome!*
+
+This project celebrates and collects alt-text selfies—self-portrait descriptions that are shared online. 
+
+This project is produced by (link: https://www.bojanacoklyat.com text: Bojana Coklyat target:_blank), (link: https://shannonfinnegan.com text: Finnegan Shannon target: _blank), and (link: https://oliviadreisinger.com/ text: Olivia Dreisinger target: _blank), supported by CultureHub and Canada Council for the Arts.
+
+Thank you for checking out our alt-text experiment. We are so happy you are here!
+
+----
+
+Splash-text: Click anywhere to enter
+
+----
+
+Site-title: Alt Text Selfies
+
+----
+
+Site-author: 
+
+----
+
+Site-description: 
+
+----
+
+Site-keywords: 
+
+----
+
+Favicon: 
+
+----
+
+Twitter-img: 
+
+----
+
+Facebook-img: 

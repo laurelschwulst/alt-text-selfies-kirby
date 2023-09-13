@@ -1,0 +1,22 @@
+title: Selfie
+
+icon: ✨
+
+fields:
+  title:
+    label: Title
+    type: text
+  selfie_content:
+    label: Text
+    type: textarea
+    size: medium
+  selfie_audio:
+    label: Audio
+    type: files
+  is_in_chapbook:
+    label: Is in chapbook?
+    type: toggle
+    text:
+      - "no"
+      - "yes"
+    default: "no"

@@ -1,5 +1,85 @@
 title: Site
 
-sections:
-  pages:
-    type: pages
+tabs:
+
+  main:
+    label: Main
+    icon: text
+    columns:
+    
+      - width: 1/2
+        sections:
+          pages:
+            type: pages
+            create: default
+            templates:
+              - default
+
+      - width: 1/2
+        sections:
+          essays: sections/essays
+
+      - width: 1
+        sections:
+          selfies: sections/selfies
+
+      - width: 1
+        fields:
+          welcome_text:
+            label: Welcome
+            type: textarea
+          splash_text:
+            label: Initial Site Greeting
+            type: text
+
+  meta:
+    label: Meta
+    icon: dots
+    fields:
+
+      site_title:
+        label: Title
+        type: text
+        width: 1/2
+
+      site_author:
+        label: Authors
+        type: text
+        width: 1/2
+
+      site_description:
+        label: Description
+        type: textarea
+        size: small
+
+      site_keywords:
+        label: Keywords
+        type: text
+
+      favicon:
+        label: Favicon
+        type: files
+        multiple: false
+        width: 1/3
+        help:
+          en: This should be square and at minimum 16 x 16 pixels
+
+      twitter_img:
+        label: Twitter Image
+        type: files
+        multiple: false
+        width: 1/3
+
+      facebook_img:
+        label: Facebook Image
+        type: files
+        multiple: false
+        width: 1/3
+
+  files:
+    label: Files
+    icon: file
+    sections:
+      files:
+        headline: Files
+        type: files

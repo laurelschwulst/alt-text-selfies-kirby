@@ -1,0 +1,19 @@
+# # This section blueprint defines a pages section that can be reused across multiple blueprints
+# # or multiple times within the same blueprint, see `/site/blueprints/pages/photography.yml`  and `/site/blueprints/site.yml`
+# # Sections can have different layouts and display additional information or a preview image
+# # More about pages sections: https://getkirby.com/docs/reference/panel/sections/pages
+type: pages
+headline: Selfies
+parent: site.find("selfies")
+info: "{{ page.published }}"
+template: selfie
+empty: No content yet
+sortBy: year desc
+columns:
+  title:
+    label: Title
+    text: "{{ page.title }}"
+    width: 1/2
+  chapbook:
+    label: Chapbook?
+    text: "{{ page.is_in_chapbook }}"
