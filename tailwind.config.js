@@ -8,8 +8,8 @@ module.exports = {
       xs: '0.5rem',
       sm: '0.75rem',
       base: '1rem',
-      xl: '1.33333rem',
-      '2xl': '1.5rem',
+      lg: '1.33333rem',
+      xl: '1.5rem',
     },
     spacing: {
       0: "0",
