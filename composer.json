@@ -23,7 +23,8 @@
   },
   "require": {
     "php": ">=8.0.0 <8.3.0",
-    "getkirby/cms": "^3.9"
+    "getkirby/cms": "^3.9",
+    "getkirby/kql": "^2.0"
   },
   "config": {
     "allow-plugins": {

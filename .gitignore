@@ -15,6 +15,14 @@ Icon
 
 .lock
 
+# Managed by Composer
+# ---------------
+/kirby
+/kirby/*
+/vendor
+
+
+
 # Editors
 # (sensitive workspace files)
 # ---------------------------

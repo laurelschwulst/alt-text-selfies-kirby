@@ -1,4 +1,22 @@
-<img src="http://getkirby.com/assets/images/github/plainkit.jpg" width="300">
+# Alt-Text Selfies #
+
+## Architecture ##
+- Kirby is the CMS, running on a PHP server.
+- The front-end is a single-page app (SPA) built with Nuxt using VueJS.
+
+## Setup ##
+1. Install Kirby dependencies: `composer install`
+2. Start the Kirby server, using MAMP (local) or php-fpm (remote server)
+3. Install Nuxt dependencies: `cd nuxt-app && npm install`
+4. The Nuxt app uses credentials to access the Kirby API as a user. Create a `.env` file in the root directory with the following variables:
+   ```
+   KIRBY_API_USERNAME=make-a-new-user-in-Kirby-panel-and-enter-username-here
+   KIRBY_API_PASSWORD=enter-the-password-of-the-user-you-just-created-here
+   ```
+5. Start the Nuxt app:
+    Local: `npm run dev`
+    Production: `npm run build && npm run start`
+Once the development server is running, access the app at localhost:3000
 
 ## Using Tailwind ##
 Reference: [Kirby + Tailwind](https://getkirby.com/docs/cookbook/setup/kirby-meets-tailwindcss)
