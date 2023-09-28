@@ -20,6 +20,7 @@
 html {
   font-family: 'Century Expanded';
   font-size: 24px;
+  line-height: 1.35;
 }
 
 p {
@@ -32,6 +33,7 @@ p {
   border-radius: 20px;
 }
 
-.ats-button:hover {
+.ats-button:hover,
+.ats-button.current {
   border-color: black;
 }

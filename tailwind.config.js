@@ -5,6 +5,8 @@ module.exports = {
       black: "#000000",
       white: "#FFFFFF",
       yellow: "#FEFFBB",
+      skyblue: "#C5E6FC",
+      orange: "#F5E5B5",
     },
     fontSize: {
       xs: '0.5rem',
