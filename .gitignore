@@ -53,3 +53,8 @@ Icon
 # ---------------
 
 /node_modules
+
+# Vendor
+# ---------------
+
+/vendor
