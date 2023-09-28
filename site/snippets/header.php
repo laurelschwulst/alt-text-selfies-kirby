@@ -35,7 +35,3 @@
 </head>
 
 <body>
-
-<header>
-    <?= $site->title() ?>
-</header>

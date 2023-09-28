@@ -2,6 +2,8 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
+      black: "#000000",
+      white: "#FFFFFF",
       yellow: "#FEFFBB",
     },
     fontSize: {
