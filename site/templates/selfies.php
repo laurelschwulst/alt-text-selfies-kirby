@@ -6,24 +6,29 @@
         <?php snippet('title') ?>
     </div>
 
-    <div class="w-[519px] grow shrink-0 flex justify-center items-center">
+    <div class="w-[519px] grow shrink-0 flex justify-center items-center mt-24 mb-24">
         <div>
             
-            <?php $selfie = $page->children()->listed()->first(); ?>
+            <?php $selfie = $page->children()->listed()->shuffle()->first(); ?>
 
-            <?= $selfie->title() ?>
+            <div class="italic">
+                <?= $selfie->title() ?>
+            </div>
+
+            <div class="mt-4 mb-5">
+                <button class="ats-button listen">Listen</button>
+            </div>
 
             <?= $selfie->selfie_content()->kt() ?>
 
         </div>
     </div>
 
-    <nav id="lateral">
-        <a href="" class="next">→</a>
-        <a href="" class="previous">←</a>
-    </nav>
+    <?php snippet('nav-lateral') ?>
 
-    <?php snippet('menu') ?>
+    <?php snippet('nav-sound') ?>
+
+    <?php snippet('menu-collapsed') ?>
 
 </div>
 

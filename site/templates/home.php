@@ -12,6 +12,14 @@
     </div>
 
     <?php snippet('menu') ?>
+    
+    <?php snippet('nav-sound') ?>
+
+    <nav id="lateral">
+        <div class="next-container">
+            <a href="selfies" class="next ats-button">→</a>
+        </div>
+    </nav>
 
 </div>
 

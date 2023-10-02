@@ -2,8 +2,16 @@ Title: Book
 
 ----
 
-Uuid: YKyafjct8VySDp3v
+Text:
+
+We made a chapbook that collects 30 alt-text selfies, showcasing a variety of styles, approaches, and perspectives.
+
+Our chapbook comes in many formats:
+
+(link: # text: Download as Word Doc class: ats-button)
+
+(link: # text: Download as a PDF class: ats-button)
 
 ----
 
-Text: 
+Uuid: YKyafjct8VySDp3v

@@ -7,12 +7,12 @@
     </div>
 
     <div class="grow-0 shrink-0">
-      <?php snippet('subtitle') ?>
+      <?php snippet('essay-title') ?>
     </div>
 
     <div class="w-[855px] grow shrink-0 flex justify-center items-center mt-12 mb-24">
       <div>
-        <?= $page->text()->kirbytext() ?>
+        <?= $page->text()->toBlocks() ?>
       </div>
     </div>
 

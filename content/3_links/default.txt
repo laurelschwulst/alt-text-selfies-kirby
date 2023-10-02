@@ -2,8 +2,8 @@ Title: Links
 
 ----
 
-Uuid: 0se5q2CJwaYGgde2
+Text: Links or resources go here!
 
 ----
 
-Text: 
+Uuid: 0se5q2CJwaYGgde2
