@@ -11,13 +11,15 @@
         </div>
     </div>
 
-    <menu class="flex gap-2 grow-0 shrink-0 mb-4">
-        <li class="ats-button"><a class="selfies" href="selfies">Selfies</a></li>
-        <?php foreach ($site->pages()->listed()->filterBy('template', 'default') as $menu_item): ?>
-            <li class="ats-button"><a class="<?php e($page->slug() == $menu_item->slug(), 'current') ?>" href="<?= $menu_item->url() ?>"><?= $menu_item->title() ?></a></li>
-        <?php endforeach ?>
-        <li class="ats-button"><a class="essays" href="essays">Essays</a></li>
-    </menu>
+    <?php snippet('menu') ?>
+    
+    <?php snippet('nav-sound') ?>
+
+    <nav id="lateral">
+        <div class="next-container">
+            <a href="selfies" class="next ats-button">→</a>
+        </div>
+    </nav>
 
 </div>
 

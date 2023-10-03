@@ -1,4 +1,5 @@
 :root {
+  --black: #000;
   --light-grey: rgba(0,0,0,0.25);
   --yellow: #FEFFBB;
 }
@@ -20,18 +21,143 @@
 html {
   font-family: 'Century Expanded';
   font-size: 24px;
+  line-height: 1.35;
+}
+
+b, strong {
+  font-family: 'Century Expanded';
+  font-weight: normal;
+}
+
+i, em {
+  font-family: 'Century Expanded';
+  font-style: italic;
 }
 
 p {
   margin: 1rem 0;
 }
 
+button {
+  line-height: auto;
+}
+
 .ats-button {
   padding: 6px 16px;
   border: 1px solid var(--light-grey);
   border-radius: 20px;
+  transition: 0.25s all ease;
 }
 
-.ats-button:hover {
+.ats-button:hover,
+.ats-button.current {
   border-color: black;
+}
+
+.ats-button.listen {
+  background: var(--black);
+  color: var(--yellow);
+  border-color: var(--black);
+}
+
+p a {
+  text-decoration: underline;
+}
+
+p a.ats-button {
+  text-decoration: none;
+}
+
+/* NAV */
+
+nav#lateral .next-container,
+nav#lateral .prev-container {
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav#lateral .next-container {
+  right: calc(50vw - 500px);
+}
+
+nav#lateral .prev-container {
+  left: calc(50vw - 500px);
+}
+
+a.next,
+a.prev {
+  display: inline-block;
+  border-radius: 50%;
+  border: 1px solid var(--light-grey);
+  height: 5em;
+  width: 5em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav#sound {
+  position: fixed;
+  z-index: 3;
+}
+
+.ats-button.sound {
+  border-radius: 50%;
+}
+
+.collapsed {
+  display: none;
+}
+
+.collapsed.uncollapsed {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-activator a {
+  cursor: pointer;
+}
+
+.fade-up:before {
+  content: "";
+  position: absolute;
+  display: block;
+  bottom: 98px;
+  height: 50px;
+  width: 100vw;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 195, 0), rgba(255, 255, 195, 1));
+}
+
+.fade-down:before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 80px;
+  height: 50px;
+  width: 100vw;
+  background-image: linear-gradient(to top, rgba(255, 255, 195, 0), rgba(255, 255, 195, 1));
+}
+
+/* PLACEHOLDER STARS */
+
+.stars {
+  border-radius: 50%;
+  border: 1px solid var(--light-grey);
+}
+
+hr {
+  border: 0;
+  margin: 2em 0;
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.text-xl {
+  font-size: 2.5rem;
+  line-height: 1.25;
 }

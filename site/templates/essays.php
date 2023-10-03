@@ -12,7 +12,17 @@
 
     <div class="w-[855px] grow shrink-0 flex justify-center items-center mt-12 mb-24">
       <div>
-        <?= $page->text()->kirbytext() ?>
+        <?= $site->essays_text()->kirbytext() ?>
+
+        <ul>
+        <?php foreach ($page->children()->listed() as $essay): ?>
+            <li class="mb-3">
+                <a class="underline" href="<?= $essay->url() ?>"><?= $essay->title() ?></a><br>
+                <i><?= $essay->author() ?></i>
+            </li>
+        <?php endforeach ?>
+        </ul>
+        
       </div>
     </div>
 

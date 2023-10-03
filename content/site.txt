@@ -2,6 +2,10 @@ Title: Alt Text Selfies
 
 ----
 
+Splash-text: Click anywhere to enter
+
+----
+
 Welcome-text:
 
 *Welcome!*
@@ -14,7 +18,7 @@ Thank you for checking out our alt-text experiment. We are so happy you are here
 
 ----
 
-Splash-text: Click anywhere to enter
+Essays-text: We are excited to share two essays connected to this project and a note from each of us about the process of working on this project.
 
 ----
 

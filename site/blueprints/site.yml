@@ -25,12 +25,15 @@ tabs:
 
       - width: 1
         fields:
-          welcome_text:
-            label: Welcome
-            type: textarea
           splash_text:
             label: Initial Site Greeting
             type: text
+          welcome_text:
+            label: Site Welcome
+            type: textarea
+          essays_text:
+            label: Essays Welcome
+            type: textarea
 
   meta:
     label: Meta
