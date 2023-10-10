@@ -2,17 +2,13 @@ Title: Alt Text Selfies
 
 ----
 
-Splash-text: Click anywhere to enter
-
-----
-
 Welcome-text:
 
 *Welcome!*
 
-This project celebrates and collects alt-text selfies—self-portrait descriptions that are shared online. 
+This project celebrates and collects alt-text selfies—self-portrait descriptions that are shared online.
 
-This project is produced by (link: https://www.bojanacoklyat.com text: Bojana Coklyat target:_blank), (link: https://shannonfinnegan.com text: Finnegan Shannon target: _blank), and (link: https://oliviadreisinger.com/ text: Olivia Dreisinger target: _blank), supported by CultureHub and Canada Council for the Arts.
+This project is produced by Bojana Coklyat, Finnegan Shannon, and Olivia Dreisinger, supported by CultureHub and Canada Council for the Arts.
 
 Thank you for checking out our alt-text experiment. We are so happy you are here!
 
@@ -47,3 +43,7 @@ Twitter-img:
 ----
 
 Facebook-img: 
+
+----
+
+Splash-text: Click anywhere to enter

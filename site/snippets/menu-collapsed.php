@@ -8,7 +8,7 @@
             <?php foreach ($site->pages()->listed()->filterBy('template', 'default') as $menu_item): ?>
                 <li><a class="ats-button <?php e($page->slug() == $menu_item->slug(), 'current') ?>" href="<?= $menu_item->url() ?>"><?= $menu_item->title() ?></a></li>
             <?php endforeach ?>
-            <li><a class="ats-button essays <?php e($page->slug() == 'essays', 'current') ?>" href="essays">Essays</a></li>
+            <li><a class="ats-button essays <?php e($page->slug() == 'essays', 'current') ?>" href="<?= $site->find('essays')->url() ?>">Essays</a></li>
             <li><a class="ats-button close" href="#">Close</a></li>
         </menu>
     </div>

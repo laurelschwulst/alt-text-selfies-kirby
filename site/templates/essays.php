@@ -28,7 +28,7 @@
 
     <?php snippet('nav-sound') ?>
 
-    <?php snippet('menu-collapsed') ?>
+    <?php snippet('menu') ?>
 
 </div>
 

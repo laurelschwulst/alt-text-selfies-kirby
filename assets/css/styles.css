@@ -1,7 +1,9 @@
 :root {
   --black: #000;
   --light-grey: rgba(0,0,0,0.25);
+  --grey: rgb(228, 228, 228);
   --yellow: #FEFFBB;
+  --light-yellow: rgba(254, 255, 194, 0.5);
 }
 
 @font-face {
@@ -22,6 +24,7 @@ html {
   font-family: 'Century Expanded';
   font-size: 24px;
   line-height: 1.35;
+  background: var(--yellow);
 }
 
 b, strong {
@@ -58,6 +61,23 @@ button {
   background: var(--black);
   color: var(--yellow);
   border-color: var(--black);
+}
+
+.ats-button-large {
+  border: 1px solid var(--light-yellow);
+  height: 12em;
+  width: 12em;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--yellow);
+  transition: 0.25s all ease;
+}
+
+.ats-button-large:hover {
+  border-color: var(--yellow);
 }
 
 p a {
@@ -162,4 +182,12 @@ hr {
   line-height: 1.25;
 }
 
-/* TESTING 123 */
+.splash {
+  color: var(--yellow);
+}
+
+/* SELFIES */
+
+.selfies-index {
+  background: var(--grey);
+}

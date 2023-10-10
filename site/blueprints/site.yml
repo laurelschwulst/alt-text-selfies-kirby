@@ -25,9 +25,6 @@ tabs:
 
       - width: 1
         fields:
-          splash_text:
-            label: Initial Site Greeting
-            type: text
           welcome_text:
             label: Site Welcome
             type: textarea
