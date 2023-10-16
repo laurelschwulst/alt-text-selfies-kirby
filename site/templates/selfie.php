@@ -6,15 +6,7 @@
         <?php snippet('title') ?>
     </div>
 
-    <div class="w-[519px] grow shrink-0 flex justify-center items-center mt-24 mb-24">
-        <div>
-            <div class="italic">
-                <?= $page->title() ?>
-            </div>
-
-            <?= $page->selfie_content()->kt() ?>
-        </div>
-    </div>
+    <?php snippet('selfie', ['selfie' => $page]) ?>
 
     <?php snippet('nav-sound') ?>
 

@@ -6,23 +6,9 @@
         <?php snippet('title') ?>
     </div>
 
-    <div class="w-[519px] grow shrink-0 flex justify-center items-center mt-24 mb-24">
-        <div>
-            
-            <?php $selfie = $site->find('selfies')->children()->listed()->shuffle()->first(); ?>
+    <?php $selfie = $site->find('selfies')->children()->listed()->shuffle()->first(); ?>
 
-            <div class="italic">
-                <?= $selfie->title() ?>
-            </div>
-
-            <div class="mt-4 mb-5">
-                <button class="ats-button listen">Listen</button>
-            </div>
-
-            <?= $selfie->selfie_content()->kt() ?>
-
-        </div>
-    </div>
+    <?php snippet('selfie', ['selfie' => $selfie]) ?>
 
     <?php snippet('nav-lateral') ?>
 
