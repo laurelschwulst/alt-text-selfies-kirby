@@ -191,3 +191,11 @@ hr {
 .selfies-index {
   background: var(--grey);
 }
+
+.filter-modal {
+  display: none;
+}
+
+.filter-modal.open {
+  display: flex;
+}

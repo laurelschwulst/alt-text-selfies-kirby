@@ -16,7 +16,10 @@
 
     <div class="w-[519px] grow shrink-0 flex justify-center items-center">
         <div>
-            <?php foreach ($site->find('selfies')->children()->listed() as $selfie): ?>
+            <?php snippet('filters') ?>
+
+            <?php $selfies = $site->find('selfies')->children()->listed()->sortBy('title', 'asc') ?>
+            <?php foreach ($selfies as $selfie): ?>
                 <a class="underline" href="<?= $selfie->url() ?>"><?= $selfie->title() ?></a><br>
             <?php endforeach ?>
         </div>
