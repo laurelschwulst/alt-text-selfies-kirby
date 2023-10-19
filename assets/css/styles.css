@@ -194,6 +194,7 @@ hr {
 
 .filter-modal {
   display: none;
+  background: var(--grey);
 }
 
 .filter-modal.open {
