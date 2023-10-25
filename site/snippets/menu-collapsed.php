@@ -4,7 +4,7 @@
             <a class="ats-button">Menu</a>
         </nav>
         <menu class="collapsed gap-2 grow-0 shrink-0 flex text-center">
-            <li><a class="ats-button selfies <?php e($page->slug() == 'selfies', 'current') ?>" href="selfies">Selfies</a></li>
+            <li><a class="ats-button selfies <?php e($page->slug() == 'selfies', 'current') ?>" href="<?= $site->url() . '/selfies'?>">Selfies</a></li>
             <?php foreach ($site->pages()->listed()->filterBy('template', 'default') as $menu_item): ?>
                 <li><a class="ats-button <?php e($page->slug() == $menu_item->slug(), 'current') ?>" href="<?= $menu_item->url() ?>"><?= $menu_item->title() ?></a></li>
             <?php endforeach ?>

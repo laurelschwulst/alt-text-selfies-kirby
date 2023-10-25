@@ -49,7 +49,7 @@ button {
   padding: 6px 16px;
   border: 1px solid var(--light-grey);
   border-radius: 20px;
-  transition: 0.25s all ease;
+  transition: 0.25s border ease;
 }
 
 .ats-button:hover,
@@ -188,13 +188,14 @@ hr {
 
 /* SELFIES */
 
-.selfies-index {
+/* .selfies-index {
   background: var(--grey);
-}
+} */
 
 .filter-modal {
   display: none;
   background: var(--grey);
+  z-index: 1000;
 }
 
 .filter-modal.open {
