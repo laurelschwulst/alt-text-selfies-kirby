@@ -1,6 +1,6 @@
 <div id="filter-snippet">
   <!-- TODO: When modal is open, underlying page elements (behind the modal) should be hidden from screen-reader using aria-hidden -->
-  <button class="open-filters-button" v-on:click="openFilterModal">
+  <button class="open-filters-button flex items-center gap-2 py-1" v-on:click="openFilterModal">
     <span class="underline"><?= $filterText ?></span>
     <span class="ats-button">Change</span>
   </button>

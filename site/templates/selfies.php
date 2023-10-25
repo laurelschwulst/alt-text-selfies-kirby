@@ -16,46 +16,11 @@
 
     <div class="w-[519px] grow shrink-0 flex justify-center items-center">
         <div>
-            <?php
-            $filterText = '';
-
-            // filtering before sorting is a little more energy-efficient than the other way around
-            $filter = param('filter');
-            if ($filter === 'chapbook') {
-                $selfies = $site->find('selfies')->children()->listed()->filter(function ($selfie) {
-                    return $selfie->is_in_chapbook()->toBool();
-                });
-                $filterText = 'Selfies in the chapbook, ';
-            } else if ($filter === 'audio') {
-                $selfies = $site->find('selfies')->children()->listed()->filter(function ($selfie) {
-                    return $selfie->selfie_audio()->isNotEmpty();
-                });
-                $filterText = 'Selfies with audio, ';
-            } else {
-                $selfies = $site->find('selfies')->children()->listed();
-                $filterText = 'All selfies, ';
-            }
-
-            $sort = param('sort');
-            if ($sort === 'length') {
-                $selfies = $selfies->sortBy(function ($selfie) {
-                    return $selfie->selfie_content()->length();
-                }, 'asc');
-                $filterText .= 'sorted by length';
-            } elseif ($sort === 'random') {
-                $selfies = $selfies->shuffle();
-                $filterText .= 'in random order';
-            } else {
-                $selfies = $selfies->sortBy('title', 'asc');
-                $filterText .= 'sorted in ABC order';
-            }
-            ?>
             <div class="mb-8">
                 <?php snippet('filters', ['filterText' => $filterText]) ?>
             </div>
-
             <?php foreach ($selfies as $selfie): ?>
-                <a class="underline" href="<?= $selfie->url() ?>"><?= $selfie->title() ?></a><br>
+                <a class="underline" href="<?= $selfie->url() . $filterParams ?>"><?= $selfie->title() ?></a><br>
             <?php endforeach ?>
         </div>
     </div>

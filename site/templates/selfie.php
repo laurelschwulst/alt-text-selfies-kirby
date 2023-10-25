@@ -8,6 +8,8 @@
 
     <?php snippet('selfie', ['selfie' => $page]) ?>
 
+    <?php snippet('nav-lateral', ['previousSelfie' => $previousSelfie, 'nextSelfie' => $nextSelfie]) ?>
+
     <?php snippet('nav-sound') ?>
 
     <?php snippet('menu-collapsed') ?>

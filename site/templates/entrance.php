@@ -10,7 +10,7 @@
 
     <?php snippet('selfie', ['selfie' => $selfie]) ?>
 
-    <?php snippet('nav-lateral') ?>
+    <?php snippet('nav-lateral', ['previousSelfie' => $previousSelfie, 'nextSelfie' => $nextSelfie]) ?>
 
     <?php snippet('nav-sound') ?>
 
